@@ -7,6 +7,10 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
+import javax.swing.JTextArea;
+import javax.swing.JEditorPane;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
 
 public class UI extends JFrame {
 
@@ -44,9 +48,9 @@ public class UI extends JFrame {
 		txtpnKek.setText(WinStats.getStats());
 		contentPane.add(txtpnKek, BorderLayout.WEST);
 		
-		txtpnKek = new JTextPane();
-		txtpnKek.setText(WinStats.getProcesses());
-		contentPane.add(txtpnKek, BorderLayout.EAST);
+		JTextArea txtpnKek_1 = new JTextArea();
+		txtpnKek_1.setText(WinStats.getProcesses());
+		contentPane.add(txtpnKek_1, BorderLayout.EAST);
 		pack();
 	}
 
