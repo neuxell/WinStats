@@ -42,7 +42,11 @@ public class UI extends JFrame {
 		
 		JTextPane txtpnKek = new JTextPane();
 		txtpnKek.setText(WinStats.getStats());
-		contentPane.add(txtpnKek, BorderLayout.CENTER);
+		contentPane.add(txtpnKek, BorderLayout.WEST);
+		
+		txtpnKek = new JTextPane();
+		txtpnKek.setText(WinStats.getProcesses());
+		contentPane.add(txtpnKek, BorderLayout.EAST);
 		pack();
 	}
 
